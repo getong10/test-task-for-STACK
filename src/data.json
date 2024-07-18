@@ -1,0 +1,152 @@
+[
+  {
+    "CompanyName": "Tech Innovations",
+    "DirectorName": "Ivanov Ivan Ivanovich",
+    "PhoneNumber": "+7 (900) 123-45-67"
+  },
+  {
+    "CompanyName": "Green Energy Solutions",
+    "DirectorName": "Petrov Petr Petrovich",
+    "PhoneNumber": "+7 (900) 234-56-78"
+  },
+  {
+    "CompanyName": "Skyline Construction",
+    "DirectorName": "Sidorov Sidor Sidorovich",
+    "PhoneNumber": "+7 (900) 345-67-89"
+  },
+  {
+    "CompanyName": "Health First",
+    "DirectorName": "Kuznetsov Alexey Nikolaevich",
+    "PhoneNumber": "+7 (900) 456-78-90"
+  },
+  {
+    "CompanyName": "Future Tech",
+    "DirectorName": "Smirnov Nikolay Pavlovich",
+    "PhoneNumber": "+7 (900) 567-89-01"
+  },
+  {
+    "CompanyName": "Eco World",
+    "DirectorName": "Fedorov Dmitry Sergeevich",
+    "PhoneNumber": "+7 (900) 678-90-12"
+  },
+  {
+    "CompanyName": "Digital Horizons",
+    "DirectorName": "Kozlov Andrey Ivanovich",
+    "PhoneNumber": "+7 (900) 789-01-23"
+  },
+  {
+    "CompanyName": "Urban Developments",
+    "DirectorName": "Morozov Sergey Vladimirovich",
+    "PhoneNumber": "+7 (900) 890-12-34"
+  },
+  {
+    "CompanyName": "AquaPure",
+    "DirectorName": "Popov Alexander Alexandrovich",
+    "PhoneNumber": "+7 (900) 901-23-45"
+  },
+  {
+    "CompanyName": "TechWave",
+    "DirectorName": "Lebedev Viktor Viktorovich",
+    "PhoneNumber": "+7 (900) 012-34-56"
+  },
+  {
+    "CompanyName": "GreenFuture",
+    "DirectorName": "Sokolov Denis Anatolievich",
+    "PhoneNumber": "+7 (900) 123-45-67"
+  },
+  {
+    "CompanyName": "NextGen Robotics",
+    "DirectorName": "Mikhailov Alexey Ivanovich",
+    "PhoneNumber": "+7 (900) 234-56-78"
+  },
+  {
+    "CompanyName": "UrbanLife",
+    "DirectorName": "Novikov Nikolay Sergeevich",
+    "PhoneNumber": "+7 (900) 345-67-89"
+  },
+  {
+    "CompanyName": "EcoTech",
+    "DirectorName": "Frolov Pavel Andreevich",
+    "PhoneNumber": "+7 (900) 456-78-90"
+  },
+  {
+    "CompanyName": "Solar Solutions",
+    "DirectorName": "Stepanov Sergey Petrovich",
+    "PhoneNumber": "+7 (900) 567-89-01"
+  },
+  {
+    "CompanyName": "BioHealth",
+    "DirectorName": "Medvedev Anton Viktorovich",
+    "PhoneNumber": "+7 (900) 678-90-12"
+  },
+  {
+    "CompanyName": "TechPioneers",
+    "DirectorName": "Romanov Boris Alexandrovich",
+    "PhoneNumber": "+7 (900) 789-01-23"
+  },
+  {
+    "CompanyName": "SmartBuild",
+    "DirectorName": "Vasiliev Ivan Dmitrievich",
+    "PhoneNumber": "+7 (900) 890-12-34"
+  },
+  {
+    "CompanyName": "GreenFields",
+    "DirectorName": "Markov Alexey Petrovich",
+    "PhoneNumber": "+7 (900) 901-23-45"
+  },
+  {
+    "CompanyName": "CloudNet",
+    "DirectorName": "Karpov Sergey Ivanovich",
+    "PhoneNumber": "+7 (900) 012-34-56"
+  },
+  {
+    "CompanyName": "InnoSolutions",
+    "DirectorName": "Yakovlev Denis Nikolayevich",
+    "PhoneNumber": "+7 (900) 123-45-67"
+  },
+  {
+    "CompanyName": "SolarTech",
+    "DirectorName": "Zaitsev Pavel Sergeevich",
+    "PhoneNumber": "+7 (900) 234-56-78"
+  },
+  {
+    "CompanyName": "CleanAir",
+    "DirectorName": "Belov Alexey Ivanovich",
+    "PhoneNumber": "+7 (900) 345-67-89"
+  },
+  {
+    "CompanyName": "UrbanTech",
+    "DirectorName": "Trubnikov Dmitry Sergeevich",
+    "PhoneNumber": "+7 (900) 456-78-90"
+  },
+  {
+    "CompanyName": "WaterWorks",
+    "DirectorName": "Gusev Nikolay Petrovich",
+    "PhoneNumber": "+7 (900) 567-89-01"
+  },
+  {
+    "CompanyName": "EcoCity",
+    "DirectorName": "Zhukov Andrey Vladimirovich",
+    "PhoneNumber": "+7 (900) 678-90-12"
+  },
+  {
+    "CompanyName": "BioSolutions",
+    "DirectorName": "Voronin Sergey Viktorovich",
+    "PhoneNumber": "+7 (900) 789-01-23"
+  },
+  {
+    "CompanyName": "NextStep",
+    "DirectorName": "Yakimov Alexey Andreevich",
+    "PhoneNumber": "+7 (900) 890-12-34"
+  },
+  {
+    "CompanyName": "SmartEnergy",
+    "DirectorName": "Pavlov Denis Ivanovich",
+    "PhoneNumber": "+7 (900) 901-23-45"
+  },
+  {
+    "CompanyName": "FutureBuild",
+    "DirectorName": "Krylov Sergey Anatolievich",
+    "PhoneNumber": "+7 (900) 012-34-56"
+  }
+]
