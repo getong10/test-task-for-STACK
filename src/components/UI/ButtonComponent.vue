@@ -30,7 +30,7 @@ const props = defineProps({
   #add {
     background-color: rgb(66, 104, 255);
     padding: 2vh 2vw;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.1rem;
     border: none;
@@ -40,7 +40,7 @@ const props = defineProps({
   #delete {
     margin: 2px;
     background-color: rgb(230, 9, 9);
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
   }
