@@ -1,22 +1,21 @@
 <script setup>
-
-import data from '/src/data.json'
+import { computed, ref } from 'vue';
+import data from '/src/data.json';
 import TableComponent from "@/components/TableComponent.vue";
 import ButtonComponent from "@/components/UI/ButtonComponent.vue";
 import InputComponent from "@/components/UI/InputComponent.vue";
-import {computed, ref} from "vue";
 import DialogComponent from "@/components/DialogComponent.vue";
 
-const filter = ref('')
-const showDialog = ref(false)
+const filter = ref('');
+const showDialog = ref(false);
 
 const filterFn = computed(() => {
-  return data.filter(item => item.DirectorName.toLowerCase().includes(filter.value.toLowerCase()))
-})
+  return data.filter(item => item.DirectorName.toLowerCase().includes(filter.value.toLowerCase()));
+});
 </script>
 
 <template>
-  <dialog-component v-show="showDialog" />
+  <dialog-component :showDialog="showDialog" @update:showDialog="showDialog = $event"/>
   <div id="content">
     <div id="header">
       <input-component
@@ -24,7 +23,7 @@ const filterFn = computed(() => {
           placeholderInput="Найти по ФИО..."
           v-model="filter"
       />
-      <button-component msgProps="Добавить" type="add" v-model="showDialog"/>
+      <button-component msgProps="Добавить" type="add" @update:modelValue="showDialog = $event"/>
     </div>
     <table-component :data="filterFn" />
   </div>
