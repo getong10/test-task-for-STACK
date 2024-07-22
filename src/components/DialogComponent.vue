@@ -13,10 +13,15 @@ const props = defineProps({
   showDialog: Boolean
 });
 
-const emit = defineEmits(['update:showDialog']);
+const emit = defineEmits(['update:showDialog', 'add-record']);
 
 const closeDialog = () => {
   emit('update:showDialog', false);
+};
+
+const submitData = () => {
+  emit('add-record', { ...model.value });
+  closeDialog();
 };
 
 watch(() => props.showDialog, (newVal) => {
@@ -50,8 +55,17 @@ watch(() => props.showDialog, (newVal) => {
           v-model="model.DirectorName"
       />
       <div id="actions">
-        <button-component msgProps="Отмена" type="cancel" @update:modelValue="closeDialog"/>
-        <button-component msgProps="ОК" type="confirm" @update:modelValue="closeDialog"/>
+        <button-component
+            msgProps="Отмена"
+            type="cancel"
+            @click="closeDialog"
+        />
+        <button-component
+            msgProps="ОК"
+            type="confirm"
+            :check="model.CompanyName&&model.DirectorName&&model.PhoneNumber?true:false"
+            @click="submitData"
+        />
       </div>
     </div>
   </div>

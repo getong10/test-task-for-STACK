@@ -1,18 +1,54 @@
 <script setup>
 import ButtonComponent from "@/components/UI/ButtonComponent.vue";
-import {defineProps} from "vue";
+import {defineProps, defineEmits, ref} from "vue";
 
 const props = defineProps({
-  data: Array
+  data: Array,
+  sortKey: String,
+  sortOrder: Number,
+  page: Number,
 })
+
+const emit = defineEmits(['delete-record', 'sort']);
+
+const clickCounts = ref({});
+
+const handleDelete = (index) => {
+  emit('delete-record', index + 5*(props.page-1));
+};
+
+const handleSort = (key) => {
+  const currentCount = clickCounts.value[key] || 0;
+  clickCounts.value[key] = (currentCount + 1) % 3;
+
+  if (clickCounts.value[key] === 0) {
+    emit('sort', { key: '', order: 1 });
+  } else {
+    emit('sort', { key, order: clickCounts.value[key] === 1 ? 1 : -1 });
+  }
+};
 </script>
 
 <template>
   <div id="table">
     <div id="table-header">
       <div class="col-container">
-        <div class="row-header">Название</div>
-        <div class="row-header">ФИО директора</div>
+        <div
+            @click="handleSort('CompanyName')"
+            class="row-header"
+        >
+          Название
+          <span v-if="sortKey === 'CompanyName' && sortOrder === 1" >↑</span>
+          <span v-else-if="sortKey === 'CompanyName' && sortOrder === -1" >↓</span>
+        </div>
+        <div
+            @click="handleSort('DirectorName')"
+            class="row-header"
+        >
+          ФИО директора
+          <span v-if="sortKey === 'DirectorName' && sortOrder === 1" >↑</span>
+          <span v-else-if="sortKey === 'DirectorName' && sortOrder === -1" >↓</span>
+        </div>
         <div class="row-header">Номер телефона</div>
         <div class="row-header"></div>
       </div>
@@ -22,7 +58,7 @@ const props = defineProps({
         <div class="row">{{ record.CompanyName }}</div>
         <div class="row">{{ record.DirectorName }}</div>
         <div class="row">{{ record.PhoneNumber }}</div>
-        <button-component msgProps="X" type="delete"/>
+        <button-component msgProps="X" type="delete" @click="handleDelete(index)"/>
       </div>
     </div>
   </div>

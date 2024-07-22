@@ -10,25 +10,6 @@ const props = defineProps({
 
 <template>
   <input
-      v-if="props.labelInput==='filter'"
-      :placeholder="props.placeholderInput"
-      @input="$emit('update:modelValue', $event.target.value)"
-  />
-
-  <input
-      v-if="props.labelInput==='company'"
-      :placeholder="props.placeholderInput"
-      @input="$emit('update:modelValue', $event.target.value)"
-  />
-
-  <input
-      v-if="props.labelInput==='number'"
-      :placeholder="props.placeholderInput"
-      @input="$emit('update:modelValue', $event.target.value)"
-  />
-
-  <input
-      v-if="props.labelInput==='name'"
       :placeholder="props.placeholderInput"
       @input="$emit('update:modelValue', $event.target.value)"
   />
